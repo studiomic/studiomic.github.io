@@ -1,0 +1,59 @@
+
+// @use "../variables/index" as ex;
+
+/* POPULAR Hexadecimal
+----------------------------------------------------*/
+$cyan: #89B8C2;
+$blue: #84A0C6;
+$purple: #A093C7;
+$green: #B4BE82;
+$red: #E27878;
+$orange: #E2A478;
+$iceBG: #161822;
+$crimson: #DC143C;
+$bibitB: #3CB3E4;
+$bibitB-hsl: hsla(197,75%,56%,.9);
+
+/* WHITE
+----------------------------------------------------*/
+$col-F: #fff;
+$col-Fa: #fafafa;
+$col-Fc: #fcfcfc;
+$col-F1: #f1f1f1;
+$col-F5: #f5f5f5;
+$col-F6: #f6f6f6;
+
+/* GRAY
+----------------------------------------------------*/
+$gray10: hsl(0,0%,10%);
+$gray20: hsl(0,0%,20%);
+$gray30: hsl(0,0%,30%);
+$gray40: hsl(0,0%,40%);
+$gray50: hsl(0,0%,50%);
+$gray60: hsl(0,0%,60%);
+$gray70: hsl(0,0%,70%);
+$gray80: hsl(0,0%,80%);
+$gray90: hsl(0,0%,90%);
+
+$col-dd: #ddd;
+$col-aa: #aaa;
+$col-66: #666;
+
+/* BLACK
+----------------------------------------------------*/
+$col-00: #000;
+$col-14: #141414;
+$col-19: #191919;
+$col-22: #222;
+$col-24: #242424;
+$col-28: #282828;
+$col-36: #363636;
+$col-hart: #96999d;
+
+/* SITE BASE COLOR
+----------------------------------------------------*/
+$text-color: $col-24;
+$link-color: $bibitB;
+$hover-color: $crimson;
+$Bg-color: $col-F;
+$footer-Bg-color: $col-14;

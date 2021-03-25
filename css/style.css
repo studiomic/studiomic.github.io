@@ -1,0 +1,54 @@
+/* POPULAR Hexadecimal
+----------------------------------------------------*/
+/* WHITE
+----------------------------------------------------*/
+/* GRAY
+----------------------------------------------------*/
+/* BLACK
+----------------------------------------------------*/
+/* SITE BASE COLOR
+----------------------------------------------------*/
+/* Numerical value
+----------------------------------------------------*/
+/* variables/index.scss */
+/* HTML:BODY
+----------------------------------------------------*/
+body {
+  color: #242424;
+  background: #fff;
+  position: relative;
+  font-size: 16px;
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", sans-serif;
+}
+
+/* ANCHOR
+----------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #3CB3E4;
+}
+a:hover, a:active, a:focus {
+  color: #DC143C;
+}
+
+strong {
+  font-weight: 500;
+}
+
+main {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+header {
+  text-align: center;
+  padding-top: 35vh;
+}
+header img {
+  width: 24rem;
+}

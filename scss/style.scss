@@ -1,0 +1,55 @@
+
+@use "variables/index" as ex;
+
+/* HTML:BODY
+----------------------------------------------------*/
+body {
+	color: ex.$text-color;
+	background: ex.$col-F;
+	position: relative;
+	font-size: 16px;
+	font-family: ex.$BasefontFamily;
+}
+
+/* ANCHOR
+----------------------------------------------------*/
+a {
+	text-decoration: none;
+	color: ex.$link-color;
+	&:hover, &:active, &:focus {
+		color: ex.$hover-color;
+	}
+}
+
+strong {
+	font-weight: 500;
+}
+
+main {
+	padding-bottom: 4rem;
+	text-align: center;
+}
+h6 {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+// main > section > h1,
+// main > h1 {
+// 	font-size: 4rem;
+// 	font-weight: normal;
+// 	text-align: center;
+// }
+// main > h1 {
+// 	margin-top: 4rem;
+// }
+// main > section > h1 {
+// 	margin-bottom: 4rem;
+// }
+
+header {
+	text-align: center;
+	padding-top: 35vh;
+	img {
+		width: 24rem;
+	}
+}

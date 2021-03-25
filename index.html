@@ -1,18 +1,19 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta charset="UTF-8">
+	<title>StudioMic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<body>
+	<header>
+		<h1><a href="https://www.studiomic.net/"><img src="img/logo.png" alt="StudioMic"></a></h1>
+	</header>
+	<main>
+		<h6>repository</h6>
+	</main>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+</body>
+</html>
