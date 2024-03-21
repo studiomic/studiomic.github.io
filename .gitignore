@@ -56,8 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env*
-.env.development
-.env.production
+Stylo/.env.development
+Stylo/.env.production
 
 # Gatsby build folder
 public
