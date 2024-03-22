@@ -216,11 +216,11 @@ details:not([open]) {
 	.container {
 		max-width: var(--size-max-width);
 		margin: 0 auto;
-		border: 1px solid pink;
+		// border: 1px solid pink;
 	}
 	.article {
 		gap: var(--space-xl);
-		border: 1px solid orchid;
+		// border: 1px solid orchid;
 	}
 }
 

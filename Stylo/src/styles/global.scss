@@ -30,9 +30,7 @@ html * {
 main {
   overflow-x: hidden;
   container: main / inline-size;
-  // margin: 0;
-  // padding: 0;
-  border: 1px solid crimson;
+  // border: 1px solid crimson;
 }
 
 .wave,.wavervs,.wavetop {
@@ -70,7 +68,7 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background-color .7s ease-out;
   container: body / inline-size;
-  border: 1px solid Cyan;
+  // border: 1px solid Cyan;
 }
 
 .dark-mode {

@@ -1,15 +1,17 @@
 .intoro {
+	background: url(../asset/img/marc-olivier-jodoin-j2veIzsS9sY-unsplash.jpg);
+	// background: url(../asset/img/bundo-kim-IStZpF3ZeiQ-unsplash.jpg);
 	// background: url(../asset/img/mob-about.avif);
-	// background: url(../asset/img/tu-tram-pham-UOxMPRPUTOA-unsplash.jpg);
 	// background: url(../asset/img/thirteen-j-q3bRw83ReDs-unsplash.jpg);
 	// background: url(../asset/img/IMG_3584.png);
 	// background: url(../asset/img/henry-co-5SoGp8vJO00-unsplash.png);
 	// background: url(../asset/img/henry-co-5SoGp8vJO00-unsplash.jpg);
 	// background: url(../asset/img/note-thanun-dOFpWEml0nw-unsplash.jpg);
-	background: url(../asset/img/marc-olivier-jodoin-j2veIzsS9sY-unsplash.jpg);
 	// background-size: contain;
+	background-size: contain;
 	background-size: cover;
 	background-position: center;
+	background-position: top;
 	background-position: bottom;
 	filter: saturate(70%);
 	width: 100%;

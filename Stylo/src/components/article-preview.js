@@ -25,8 +25,6 @@ const ArticlePreview = ({ posts }) => {
               </div>
               <div className={styles.meta}>
                 <small>{post.publishDate}</small>
-
-
                 <small className={tagstyles.tags}>
             {post.metadata.tags.map(tag => (
                 <div key={tag} className={tagstyles.tagPreview}>
