@@ -1,14 +1,14 @@
 .intoro {
 	background: url(../asset/img/mob-top.webp);
-	background: url(../asset/img/note-thanun-dOFpWEml0nw-unsplash.jpg);
-	background: url(../asset/img/henry-co-5SoGp8vJO00-unsplash.jpg);
-	background: url(../asset/img/marc-olivier-jodoin-j2veIzsS9sY-unsplash.jpg);
-	
-	
-	
+	background: url(../asset/img/note-thanun-dOFpWEml0nw-unsplash.jpg)no-repeat;
+	// background: url(../asset/img/henry-co-5SoGp8vJO00-unsplash.jpg);
+	// background: url(../asset/img/marc-olivier-jodoin-j2veIzsS9sY-unsplash.jpg);
+	// background: url(../asset/img/tu-tram-pham-UOxMPRPUTOA-unsplash.jpg);
+	// background-size: contain;
 	background-size: cover;
+	// background-position: top;
 	background-position: center;
-	// background-position: bottom;
+	background-position: 0 -300px;
 	width: 100%;
 	height: 40dvh;
 	margin: var(--space-xl) 0 0;
@@ -16,9 +16,9 @@
 	display: flex;
 	color: rgba(#fdfdfd,.75);
 	// color:var(--crimson);
-	
-	color:hsl(283,16%,70%);
-	// filter: grayscale(40%);
+	// color:hsl(283,16%,70%);
+	// color:#7026b9;
+	filter: grayscale(40%);
 	p {
 		margin: initial;
 		font-size: var(--text-xl);

@@ -22,11 +22,7 @@ const Navigation = () => (
           Home
         </Link>
       </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
-        </Link>
-      </li>
+      
       <li className={styles.navigationItem}>
         <Link to="/about/" activeClassName="active">
           About
@@ -35,6 +31,16 @@ const Navigation = () => (
       <li className={styles.navigationItem}>
         <Link to="/notes/" activeClassName="active">
           Notes
+        </Link>
+      </li>
+      <li className={styles.navigationItem}>
+        <Link to="/blog/" activeClassName="active">
+          Blog
+        </Link>
+      </li>
+      <li className={styles.navigationItem}>
+        <Link to="/tags/" activeClassName="active">
+          Tags
         </Link>
       </li>
       <li className={styles.navigationItem}>
