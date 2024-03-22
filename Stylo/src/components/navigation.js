@@ -9,7 +9,7 @@ const Navigation = () => (
     <Link to="/" className={styles.logoLink}>
     <StaticImage
       src="../asset/img/Logo640.png"
-      alt="LOGO"
+      alt="Stylo de Cerise"
       placeholder="blurred"
       layout="fixed"
       width={128}
@@ -17,20 +17,14 @@ const Navigation = () => (
     />
     </Link>
     <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
+      {/* <li className={styles.navigationItem}>
         <Link to="/" activeClassName="active">
           Home
         </Link>
-      </li>
-      
+      </li> */}
       <li className={styles.navigationItem}>
         <Link to="/about/" activeClassName="active">
           About
-        </Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/notes/" activeClassName="active">
-          Notes
         </Link>
       </li>
       <li className={styles.navigationItem}>
@@ -39,8 +33,8 @@ const Navigation = () => (
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/tags/" activeClassName="active">
-          Tags
+        <Link to="/notes/" activeClassName="active">
+          Notes
         </Link>
       </li>
       <li className={styles.navigationItem}>
