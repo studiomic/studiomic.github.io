@@ -29,9 +29,10 @@ html * {
 
 main {
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  // border: 1px solid cyan;
+  container: main / inline-size;
+  // margin: 0;
+  // padding: 0;
+  border: 1px solid crimson;
 }
 
 .wave,.wavervs,.wavetop {

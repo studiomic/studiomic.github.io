@@ -20,3 +20,15 @@
     display: block;
   }
 }
+
+.tagPreview {
+  background-color: var(--black-fade-5);
+  border-radius: var(--radius-sm);
+  line-height: var(--solid);
+  padding: var(--space-sm) var(--space-md);
+  a {
+    border: initial!important;
+    display: block;
+  }
+}
+
