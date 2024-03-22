@@ -12,11 +12,16 @@ const Navigation = () => (
       alt="LOGO"
       placeholder="blurred"
       layout="fixed"
-      width={160}
-      height={93.25}
+      width={128}
+      height={75}
     />
     </Link>
     <ul className={styles.navigation}>
+      <li className={styles.navigationItem}>
+        <Link to="/" activeClassName="active">
+          Home
+        </Link>
+      </li>
       <li className={styles.navigationItem}>
         <Link to="/blog/" activeClassName="active">
           Blog
@@ -40,6 +45,3 @@ const Navigation = () => (
 )
 
 export default Navigation
-
-
-//<DarkModeToggle />

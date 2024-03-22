@@ -29,6 +29,9 @@ html * {
 
 main {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  // border: 1px solid cyan;
 }
 
 .wave,.wavervs,.wavetop {
@@ -224,19 +227,8 @@ tt:after {
     display: none;
   }
 }
-
-// .circle {
-//   background: #f3f3f3;
-//   background-image: linear-gradient(90deg, rgba(233, 233, 233, 1), rgba(172, 172, 172, 0.53));
 //   background-image: linear-gradient(90deg, rgba(233, 233, 233, 0.11), rgba(172, 172, 172, 0.21));
 //   border-radius:64% 36% 53% 47% / 45% 42% 58% 55%;
-//   width: 300px;
-//   height: 220px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 // @font-face {
 //   font-family: 'Inter var';
 //   font-weight: 100 900;
@@ -244,7 +236,6 @@ tt:after {
 //   font-style: normal;
 //   font-named-instance: 'Regular';
 //   src: url('/fonts/Inter-roman.var.woff2?v=3.19') format('woff2');
-// }
 // @font-face {
 //   font-family: 'Inter var';
 //   font-weight: 100 900;
@@ -252,7 +243,6 @@ tt:after {
 //   font-style: italic;
 //   font-named-instance: 'Italic';
 //   src: url('/fonts/Inter-italic.var.woff2?v=3.19') format('woff2');
-// }
     // --background: #323339;
     // --background: #292934;//鉄紺
     // --background: #080b17;
@@ -260,14 +250,3 @@ tt:after {
     // --background: #000001;
     // --background: #2B2E2E;
     // --background: #181818;
-
-// :root {
-// 	--text-color: #333;
-// 	--background: #fff;
-// 	@media (prefers-color-scheme: dark) {
-// 		:root {
-// 			--text-color: #ddd;
-// 			--background: #000;
-// 		}
-// 	}
-// }
