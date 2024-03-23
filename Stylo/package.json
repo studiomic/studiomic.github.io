@@ -6,7 +6,6 @@
   "bugs": {
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
-  "deploy": "gatsby build && gh-pages -d public -b main",
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^15.12.1",
     "@mdx-js/react": "^2.3.0",
