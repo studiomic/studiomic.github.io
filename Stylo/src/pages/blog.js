@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
           src="../asset/img/mitchell-unsplash.avif"
           alt="Hero-image"
           placeholder="BLURRED"
-          quality="100"
+          quality="50"
           />
           <div className={styles.details}>
             <h1 className={styles.title}>BLOG</h1>
