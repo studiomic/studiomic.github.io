@@ -60,7 +60,7 @@ Stylo/.env.development
 Stylo/.env.production
 
 # Gatsby build folder
-# public
+public
 
 # Gatsby cache folder
 .cache
