@@ -1,8 +1,9 @@
 .intoro {
 	background: url(../asset/img/mob-top.webp);
-	background: url(../asset/img/note-thanun-dOFpWEml0nw-unsplash.avif)no-repeat;
-	// background: url(../asset/img/tu-tram-pham-UOxMPRPUTOA-unsplash.jpg);
+	background: url(../asset/img/tu-tram-pham-UOxMPRPUTOA-unsplash.jpg);
+	background: url(../asset/img/bundo-kim-IStZpF3ZeiQ-unsplash.avif);
 	// background: url(../asset/img/sakura/daniel-bernard-ibK7vdiSfAM-unsplash.jpg);
+	// background: url(../asset/img/note-thanun-dOFpWEml0nw-unsplash.avif);
 	// background: url(../asset/img/sakura/daniel-bernard-JESPu1QTHQ0-unsplash.jpg);
 	// background-size: contain;
 	background-size: cover;
@@ -11,11 +12,23 @@
 	margin: var(--space-xl) 0 0;
 	padding: var(--space-3xl) var(--space-2xl) 0;
 	display: flex;
-	color: rgba(#fdfdfd,.75);
+	color: rgba(#fdfdfd,.90);
 	// color:var(--crimson);
 	// color:hsl(283,16%,70%);
 	// color:#7026b9;
-	filter: grayscale(40%);
+	// filter: invert(98%);
+	// filter: contrast(50%);
+	// filter: sepia(40%);
+	// filter: grayscale(40%);
+	// filter: brightness(50%);
+	// filter: sepia(50%);
+	// filter: saturate(40%)
+	// animation-delay: 3s;
+	animation-name: filters;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 	p {
 		margin: initial;
 		font-size: var(--text-xl);
@@ -30,6 +43,32 @@
 	text-transform: uppercase;
 	margin: 0;
 }
+
+@keyframes filters {
+	0% {
+		filter: hue-rotate(90deg);//Green
+	}
+	15% {
+		filter: hue-rotate(45deg);//Yellow
+	}
+	30% {
+		filter: hue-rotate(120deg);//Cyan
+	}
+	45% {
+		filter: hue-rotate(180deg);//Blue
+	}
+	60% {
+		filter: hue-rotate(-50deg);//Pink
+	}
+	75% {
+		filter: hue-rotate(-150deg);//Purple
+	}
+	95% {
+		filter: grayscale(40%);
+	}
+}
+
+
 
 @container main (max-width: 819.98px) {
 	.intoro {
