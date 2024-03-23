@@ -9,11 +9,11 @@ const Navigation = () => (
     <Link to="/" className={styles.logoLink}>
     <StaticImage
       src="../asset/img/Logo640.png"
-      alt="LOGO"
+      alt="Stylo de Cerise"
       placeholder="blurred"
       layout="fixed"
-      width={160}
-      height={93.25}
+      width={128}
+      height={75}
     />
     </Link>
     <ul className={styles.navigation}>
@@ -21,12 +21,13 @@ const Navigation = () => (
         <Link to="/blog/" activeClassName="active">
           Blog
         </Link>
-      </li>
+      </li>      
       <li className={styles.navigationItem}>
         <Link to="/about/" activeClassName="active">
           About
         </Link>
       </li>
+
       <li className={styles.navigationItem}>
         <Link to="/notes/" activeClassName="active">
           Notes
@@ -40,6 +41,3 @@ const Navigation = () => (
 )
 
 export default Navigation
-
-
-//<DarkModeToggle />

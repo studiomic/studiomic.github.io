@@ -2,7 +2,6 @@ import React from "react"
 import get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import * as styles from '../styles/note.module.scss'
@@ -61,12 +60,12 @@ class NotesPostTemplate extends React.Component {
 export default NotesPostTemplate
 
 export const Head = ({ data: { markdownRemark: post } }) => {
-  return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
-  )
+	return (
+	<Seo
+		title={post.frontmatter.title}
+		description={post.frontmatter.description || post.excerpt}
+	/>
+	)
 }
 
 export const pageQuery = graphql`
