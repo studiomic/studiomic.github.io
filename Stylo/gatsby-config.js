@@ -3,7 +3,7 @@ require("dotenv").config({
 });
 
 module.exports = {
-  pathPrefix: "/Stylo",
+  pathPrefix: "/Stylo/public/",
   siteMetadata: {
     title: "Stylo de Cerise - Web Design & Web developer",
     description: "Gatsby+Contentful WebデザイナーノBLOG",
