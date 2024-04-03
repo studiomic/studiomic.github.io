@@ -8,7 +8,7 @@ function App() {
 				<h1>すたじおみっく。</h1>
 			</header>
 			<footer>
-				<p><a href="https://www.studiomic.net/">www.studiomic.net</a></p>
+				<p><a href="https://studiomic.net/">studiomic.net</a></p>
 			</footer>
     </div>
 	)
