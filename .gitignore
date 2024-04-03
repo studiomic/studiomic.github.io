@@ -72,7 +72,7 @@ public
 .netlify
 
 # System files
-.DS_Store
+# .DS_Store
 Thumbs.db
 zhtml
 z-needs
