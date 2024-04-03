@@ -52,7 +52,7 @@ const Modebutton = () => {
     return;
   };
 
-	return (
+  return (
     <div className={styles.modebox}>
       <button type="button" onClick={Light} name="LightMode">
         <img src={sun} classid="modeicon" alt="Light" />
@@ -67,6 +67,6 @@ const Modebutton = () => {
         <span>Black</span>
       </button>
     </div>
-	)
+  )
 };
 export default Modebutton
