@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "CSS Grid Layout Guidance"
-  text: "StudioMic Workshop"
-  tagline: トラックリストを理解するまでの例題集
+  text: "トラックリストを理解するまでの例題集"
+  tagline: StudioMic Workshop
   actions:
     - theme: brand
       text: Markdown Examples
