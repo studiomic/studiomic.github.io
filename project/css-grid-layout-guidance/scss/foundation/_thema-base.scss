@@ -1,0 +1,29 @@
+
+// Overwrite vitePress Default theme CSS
+// https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+
+
+/**
+ * Colors: Solid
+ * -------------------------------------------------------------------------- */
+
+:root {
+	--vp-c-white: #fafafa;//ffffff;
+	--vp-c-black: #111; //#000000;
+
+	--vp-c-neutral: var(--vp-c-black);
+	--vp-c-neutral-inverse: var(--vp-c-white);
+}
+
+.dark {
+	--vp-c-neutral: var(--vp-c-white);
+	--vp-c-neutral-inverse: var(--vp-c-black);
+}
+
+:root {
+	--red: #e47b84;
+	--green: #b6d87e;
+	--blue: #7eb5d9;
+	--yellow: #fec803;//#fec80399;
+	--aka: #b4444c;
+}

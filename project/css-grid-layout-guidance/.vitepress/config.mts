@@ -23,7 +23,7 @@ export default defineConfig({
         text: 'Navigation',
         items: [
           { text: 'CSS Grid の基本', link: '/css-grid-1' },
-          // { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'TEST', link: '/test' }
         ]
       },
       {

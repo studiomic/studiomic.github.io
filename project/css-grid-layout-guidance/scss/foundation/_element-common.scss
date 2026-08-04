@@ -1,0 +1,35 @@
+// .vp-doc p,
+// .vp-doc img,
+// .vp-doc summary {
+// 	margin: 16px 0;
+// }
+
+
+
+.vp-doc p {
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+
+.fwb {
+	font-weight: bold;
+	// padding-right: .5em;改行すれば空白あく
+}
+
+.red {
+	color: var(--red);
+}
+
+
+.dothr {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	letter-spacing: .5em;
+	// color: var(--green);
+	color: var(--vp-c-gray-1);
+	text-align: center;
+	line-height: 1;
+	// border: 1px solid plum;
+}
