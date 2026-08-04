@@ -24,7 +24,7 @@ type: ""
 }
 ```
 
-## 追加行・高さ指定トラック定義
+## 追加行・高さ指定トラック
 
 ```CSS
 .container {
@@ -45,13 +45,13 @@ grid-auto-rows:
 
 <div style="margin-top: 4em;"></div>
 
-<b class="red">grid-template-(*)</b>
-は、いわゆる<b>明示的</b>なテンプレート（型書式）であり、デザインカンプで設計された幅や高さの比率をトレースする再現力に優れている。
 
+<span class="red">grid-template-(*)</span>
+は、いわゆる明示的なテンプレート（型書式）であり、デザインカンプで設計された幅や高さの比率をトレースする再現力に優れている。
 
 だからこそLayout「何をどこに、どのように配置するか」の名を冠するわけだが。
 
-<hr>
+***
 
 具体的に考えてみよう。
 HEROコンテンツは100％フルサイズ、<br>
@@ -60,54 +60,61 @@ HEROコンテンツは100％フルサイズ、<br>
 最後に4分割する
 
 これって全体を12frという分母で考えると、構成しやすいですよね。<br>
-<b class="red">grid-template-(*)</b>
-は、設計図起こしの方眼を引く定規で、
 
+<span class="red">grid-template-(*)</span>
+は、設計図起こしの方眼を引く定規で、<br>
 無駄無駄無駄無駄ーッ‼︎ な
 &lt;div&gt;の入れ子やmargin設定をどれだけ省けるか。
 
+んまぁデトックスに最適⭐️
 
-<div style="margin-bottom: 4em;"></div>
-
-
-
-ついでに5分割や複雑な構成が入ってくるんですが・・・という場合は
-
-<strong>grid-template-(#)</strong>
-
-
-
-
-
-
-
-## 追加列・幅指定トラック定義
+## 追加列・幅指定トラック
 
 ```CSS
 grid-auto-columns:
 ```
 
-ついでに暗黙的な
+ついでに暗黙的な要素の追加に、横幅を指定をしておく、もう一つの
+<span class="red">grid-auto-(*)</span>
 
-<div style="margin-bottom: 4em;"></div>
-
-
-全体を設計して、明示的
+<span class="red">grid-template-columns</span>
+プロパティのように必要なセルの数を事前に把握できない場合、初期値はautoで列方向へトラックを生成するが、追加されるトラックの長さは一律にできる値を1つ指定できる。
 
 ```CSS
-	grid-template-columns:
-	grid-template-rows:
-	
+grid-auto-columns: 25svw;
 ```
 
-grid-auto-rows:
+<span class="red">grid-template-(*)</span>
+テンプレートと、
+
+<span class="red">grid-auto-(*)</span>
+任意の値指定
+
+明示的・暗黙的、この区別がつきにくい場合は、いつもながら<span class="red">コリスさん</span>の翻訳記事がとてもわかりやすい。
+
+<div style="margin-top: 2em;"></div>
+
+::: tip
+[CSS Gridでレイアウトする時はこのプロパティが重要！「grid-template-* 」と「grid-auto-*」の使い方を解説](https://coliss.com/articles/build-websites/operation/css/difference-between-grid-template-and-grid-auto.html)
+:::
+
+<div style="margin-top: 2em;"></div>
+
+
+ずばり要点を引用させていただくと
+
+>grid-template-*
+>プロパティはセルの位置とサイズの両方を定義するために使用されますが、
+>grid-auto-*
+>プロパティはセルのサイズのみを定義するために使用されます。
+
+***
+
+<div style="margin-top: 4em;"></div>
 
 
 
-
-<div style="margin-bottom: 4em;"></div>
-
-### example
+### example - 1
 
 ```CSS
 .container {
@@ -130,3 +137,87 @@ grid-auto-rows:
   <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
   <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
 </div>
+
+このGridコンテナの中には
+&lt;div&gt;が9つある。<br>
+淡グリーン・ブルー・レッドの3行までが
+明示的な
+<span class="red">grid-template-rows</span>
+
+下2行のグリーンは、暗黙的に追加された
+<span class="red">grid-auto-rows:</span>
+
+***
+
+### example - 2
+
+
+HEROコンテンツは100％フルサイズ、
+その下に横3分割のBOXエリアがあり、
+画面を2分割する広いエリアがあり、
+最後に4分割する
+
+<div style="margin-top: 4em;"></div>
+
+<div style="display:grid;grid-template:150px 80px 120px 50px / repeat(12, 1fr);">
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);grid-column: 1/13;grid-row: 1/2;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);grid-column: 1/5;grid-row: 2/3;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);grid-column: 5/9;grid-row: 2/3;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);grid-column: 9/13;grid-row: 2/3;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);grid-column: 1/7;grid-row: 3/4;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);grid-column: 7/13;grid-row: 3/4;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);grid-column: 1/4;grid-row: 4/5;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);grid-column: 4/7;grid-row: 4/5;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);grid-column: 7/10;grid-row: 4/5;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);grid-column: 10/13;grid-row: 4/5;"></div>
+</div>
+
+
+
+
+
+
+
+<div style="margin-top: 4em;"></div>
+
+
+<div style="display:grid;grid-auto-columns:150px;grid-template-areas:'aaa bbb ccc ddd';">
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+</div>
+
+
+
+
+```css
+.container {
+	display: grid;
+	grid-template-areas:'aaa bbb ccc ddd';
+	grid-auto-columns: 150px;
+}
+```
+
+grid-auto-rows: minmax(30px, auto);
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin-top: 4em;"></div>
+
+自動生成されるセルは30px高さ、アイテムが30pxに収まらない高さをもつと、minmaxのautoが生きて行高は伸びる
+文字通り「テンプレート」と「自動」

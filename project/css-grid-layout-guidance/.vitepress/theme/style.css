@@ -21,6 +21,10 @@
   --aka: #b4444c;
 }
 
+.seo {
+  width: 33.3333333333svw;
+}
+
 :root {
   --vp-c-brand-1: #5086a1;
   --vp-c-brand-2: #6aa1b7;
@@ -143,6 +147,10 @@
   font-size: 17px;
   line-height: 1.8;
 }
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-3);
+  color: var(--vp-c-text-1);
+}
 
 .fwb {
   font-weight: bold;
@@ -160,4 +168,12 @@
   color: var(--vp-c-gray-1);
   text-align: center;
   line-height: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 90px 60px;
+  grid-auto-rows: minmax(30px, auto);
+  gap: 1em;
 }
