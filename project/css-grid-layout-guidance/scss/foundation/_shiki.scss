@@ -16,10 +16,13 @@
 	--vp-c-red-1: #b34e52;
 	--vp-c-red-2: #bc6063;
 	--vp-c-red-3: #cb7676;
+	--vp-code-block-bg: #2e3440;
+	
 }
 
 .dark {
 	--vp-c-brand-1: #8cccd5;
+	// --vp-c-brand-1: #7eb5d9;
 	--vp-c-brand-2: #6aa1b7;
 	--vp-c-brand-3: #5086a1;
 	--vp-c-brand-soft: #83d0da50;
@@ -32,6 +35,7 @@
 	--vp-c-red-1: #cb7676;
 	--vp-c-red-2: #bc6063;
 	--vp-c-red-3: #b34e52;
+	--vp-code-block-bg: #18181a;
 }
 
 :root {
@@ -100,6 +104,8 @@
 
 :root {
 	--vp-home-hero-name-color: var(--vp-c-brand-1);
+	--vp-home-hero-name-color: var(--vp-c-brand-2);
+	// --vp-home-hero-name-color: var(--aka);
 }
 
 @media (min-width: 640px) {

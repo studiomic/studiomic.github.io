@@ -3,6 +3,22 @@
 // .vp-doc summary {
 // 	margin: 16px 0;
 // }
+.light {
+	pre.shiki {
+		background: #2e3440!important;
+	}
+}
+// code,
+// kbd,
+// samp {
+
+
+
+strong {
+	color: var(--red);
+	font-size: 1.2em;
+}
+
 .vp-doc {
 	p {
 		font-size: 17px;

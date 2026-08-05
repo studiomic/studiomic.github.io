@@ -7,7 +7,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   markdown: {
     theme: {
-      light: 'solarized-light',
+      light: 'nord',
       dark: 'kanagawa-wave'
     }
   },
@@ -20,7 +20,7 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Navigation',
+        text: 'Contents',
         items: [
           { text: 'CSS Grid の基本', link: '/css-grid-1' },
           { text: 'auto-fit / auto-fill', link: '/css-grid-2.md' },
@@ -30,6 +30,21 @@ export default defineConfig({
           { text: 'cssGrid-4.md', link: '/cssGrid-4.md' },
           { text: 'cssGrid-5.md', link: '/cssGrid-5.md' },
         ]
+      },
+      {
+        text: 'Column',
+        items: [
+          { text: 'アイテムなんて饅頭だ', link: '/column-mando.md' },
+          // { text: 'cssGrid-2.md', link: '/cssGrid-2.md' },
+          // { text: 'cssGrid-4.md', link: '/cssGrid-4.md' },
+          // { text: 'cssGrid-5.md', link: '/cssGrid-5.md' },
+        ]
+      },
+      {
+        text: 'MDN : Links',
+        items: [
+          { text: 'グリッドレイアウトの基本概念', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Grid_layout/Basic_concepts' },
+          ]
       },
       {
         text: 'MDN : Parent Properties',
