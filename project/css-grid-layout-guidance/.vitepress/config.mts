@@ -23,7 +23,12 @@ export default defineConfig({
         text: 'Navigation',
         items: [
           { text: 'CSS Grid の基本', link: '/css-grid-1' },
-          { text: 'TEST', link: '/test' }
+          { text: 'auto-fit / auto-fill', link: '/css-grid-2.md' },
+          { text: 'TEST', link: '/test' },
+          { text: 'cssGrid-1.md', link: '/cssGrid-1.md' },
+          { text: 'cssGrid-2.md', link: '/cssGrid-2.md' },
+          { text: 'cssGrid-4.md', link: '/cssGrid-4.md' },
+          { text: 'cssGrid-5.md', link: '/cssGrid-5.md' },
         ]
       },
       {

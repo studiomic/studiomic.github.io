@@ -6,6 +6,9 @@ hero:
   name: "CSS Grid Layout Guidance"
   text: "トラックリストを理解するまでの例題集"
   tagline: StudioMic Workshop
+  image:
+    src: /logo.avif
+    alt: GridLayout
   actions:
     - theme: brand
       text: Markdown Examples
@@ -18,6 +21,8 @@ features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
