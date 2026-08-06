@@ -116,73 +116,18 @@ CSS Grid layout は可変つきの方眼紙、はじめて格子状のレイア�
 
 そういう気分になったらしく、生来は横着でせっかちで「ありもの買い」の私が自分のためのチートシートをつくろうと思った。<br>
 
-イラスト図解のない、<ruby>生<rt>き</rt></ruby>のソースのみで。<br>
+イラスト図解のない、<ruby>生<rt>き</rt></ruby>のソースのみで。
+
+
+<div style="margin-top: 4em;"></div>
+
+
+
 [GRID: A simple visual cheatsheet for CSS Grid Layout](https://grid.malven.co/)
 
 
-ほど端的で気の利いたものは無理だろうが、書くことで再学習したいという欲と、<br>
-CSS Grid Layoutには時間を使っても惜しくないという確信もある。
-
-<div style="margin-top: 4em;"></div>
-
-Netscape NavigatorとInternet Explorerのブラウザ戦争の頃、Table Design、もしくはTable Layoutで散々Webサイトを制作し、長らくUI担当に明け暮れていた時期はfloat三昧、ついこの間まで便利この上ないと思っていたFlexboxはさすがにまだ憶えているが、floatの使い方など忘れてしまっている。
-
-<div style="margin-top: 3em;"></div>
-
-が、遥かな昔日にも「上質な菓子をより引き立たせて魅せる、箱職人が、私たちデザイナーの仕事だ」とばかりに、
-
-
-<div style="margin-top: 13em;"></div>
-
-
-初歩的なチュートリアルや図解つきアフィリエイトサイトの記事にもお世話になった。<br>
-出だしはそれで良かったが、何処かでボタンのかけ違えのような違和感を感じはじめ、イラスト化された説明を実装しても、結果は違うけど？というお粗末な案件もあった。
-
-<div style="margin-top: 3em;"></div>
-
-最近はめっきり、じゃない、めっぽう良記事
-
-
-
-
-<div style="margin-top: 14em;"></div>
-
-
-
-「Twitter Bootstrap」
-
-
-<div style="margin-top: 4em;"></div>
-
-
-
-
-
-Boot
-
-
-<div style="margin-top: 4em;"></div>
-
-
-
-
-
-
-<br>
-猫も杓子も使っているExcelの仕組みに準えて
-
-
-<div style="margin-top: 4em;"></div>
-
-
-
-1997年頃、ワールドワイドWebに
-
-
-
-
-CSS Gridの初歩的なチュートリアルやガイドはたくさんあり、私も書きました。しかし、ほとんどのチュートリアルで十分な解説と実際の使用例が提供されていないため、minmax()関数に対する誤解があることに気がつきました。
-
+ほど端的で気の利いたものは無理だろうが、書くことで再学習したいという欲をモチベーションに。<br>
+Let's get familiar with CSS Grid Layout.
 
 
 
