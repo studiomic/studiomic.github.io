@@ -32,6 +32,12 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Grid Properties',
+        items: [
+          { text: 'Parent Properties<br> - 親プロパティ', link: '/properties-parent.md' },
+        ]
+      },
+      {
         text: 'Column',
         items: [
           { text: 'アイテムなんて饅頭だ', link: '/column-mando.md' },
@@ -100,13 +106,14 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Runtime API Examples', link: '/api-examples' },
         ]
       },
     ],
-
+    
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/studiomic/studiomic.github.io/tree/main/project/css-grid-layout-guidance' },
+      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
     
   }
