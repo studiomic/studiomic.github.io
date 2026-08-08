@@ -7,7 +7,7 @@ hero:
   text: "トラックリストを理解するまでの例題集"
   tagline: StudioMic Workshop
   image:
-    src: /logo.avif
+    src: /logo-line.avif
     alt: GridLayout
   actions:
     - theme: brand

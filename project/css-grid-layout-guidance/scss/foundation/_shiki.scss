@@ -3,21 +3,20 @@
 // https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
 
 :root {
-	--vp-c-brand-1: #5086a1;
-	--vp-c-brand-2: #6aa1b7;
-	--vp-c-brand-3: #8cccd5;
-	--vp-c-brand-soft: #83d0da50;
-	--vp-c-bg-alt: #f9f9f9;
+	--vp-c-brand-1: #5086a1;//--vp-c-indigo-1: #a8b1ff;
+	--vp-c-brand-2: #6aa1b7;//--vp-c-indigo-2: #5c73e7;
+	--vp-c-brand-3: #8cccd5;//--vp-c-indigo-3: #3e63dd;
+	--vp-c-brand-soft: #83d0da50;//--vp-c-indigo-soft: rgba(100, 108, 255, 0.16);
+	--vp-c-bg-alt: #f9f9f9;//--vp-c-bg-alt: #f6f6f7;
 
-	--vp-c-yellow-1: #edb253;
-	--vp-c-yellow-2: #daac61;
-	--vp-c-yellow-3: #e6cc78;
+	--vp-c-yellow-1: #edb253;//--vp-c-yellow-1: #f9b44e;
+	--vp-c-yellow-2: #daac61;//--vp-c-yellow-2: #da8b17;
+	--vp-c-yellow-3: #e6cc78;//--vp-c-yellow-3: #a46a0a;
 
 	--vp-c-red-1: #b34e52;
 	--vp-c-red-2: #bc6063;
 	--vp-c-red-3: #cb7676;
 	--vp-code-block-bg: #2e3440;
-	
 }
 
 .dark {

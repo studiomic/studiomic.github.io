@@ -5,16 +5,9 @@ slug: 'cssGrid-5'
 type: ""
 ---
 
-
-
-
 ## 親コンテナ・プロパティ
 
-
-
-
-
-## grid
+## Grid コンテナ
 
 ```css
 display: grid;
@@ -23,29 +16,95 @@ display: grid;
 
 ## grid-template
 
-grid-template-columns
+```css
+grid-template-columns:
+```
 
+```css
+grid-template-rows:
+```
 
+```css
+grid-template-areas:
+  "head head head"
+  ". main ."
+  "foot foot foot";
+```
+
+ショートハンド：<br>
+-columns:
+-rows:
+-areas:
+3つのプロパティを省略記法で一括指定できる<br>
+一般によく使う2つのプロパティ行・列を指定する場合
 
 
 ```css
-grid-template-columns
+grid-template: <grid-template-rows> / <grid-template-columns>;
 ```
-grid-template-rows
 
 ```css
-grid-template-rows
+grid-template: repeat(3, 1fr); / repeat(4, 1fr);
 ```
-grid-template-areas
+
+<div style="display: grid;grid-template: repeat(3, 1fr) / repeat(4, 1fr);gap: 1em;margin: 0 auto;width: 400px;height: 300px;">
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+</div>
+
+::: details
+
+### Grid Container
 
 ```css
-grid-template-areas
-```
-grid-template
+.container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  gap: 1em;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
+}
 
-```css
-grid-template
 ```
+### SRC
+
+```html
+<div style="display: grid;grid-template: repeat(3, 1fr) / repeat(4, 1fr);gap: 1em;margin: 0 auto;width: 400px;height: 300px;">
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);"></div>
+</div>
+```
+
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
