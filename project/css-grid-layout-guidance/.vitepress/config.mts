@@ -60,6 +60,8 @@ export default defineConfig({
           { text: 'grid-template-rows', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-rows' },
           { text: 'grid-template-areas', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-areas' },
           { text: 'grid-template', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/grid-template' },
+          
+        
 
           { text: 'column-gap', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/column-gap' },
           { text: 'row-gap', link: 'https://developer.mozilla.org/ja/docs/Web/CSS/row-gap' },
