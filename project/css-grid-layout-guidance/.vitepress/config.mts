@@ -41,8 +41,8 @@ export default defineConfig({
         text: 'Column',
         items: [
           { text: 'アイテムなんて饅頭だ', link: '/column-mando.md' },
-          { text: 'FlexboxとGridの違いをわかりやすく解説', link: '/column-flexbox.md' },
-          // { text: 'cssGrid-4.md', link: '/cssGrid-4.md' },
+          { text: 'FlexboxとCSS Grid Layoutの役割の違い', link: '/column-flexbox.md' },
+          { text: 'FlexboxとGridの違いをシビアに解説', link: '/column-difference.md' },
           // { text: 'cssGrid-5.md', link: '/cssGrid-5.md' },
         ]
       },

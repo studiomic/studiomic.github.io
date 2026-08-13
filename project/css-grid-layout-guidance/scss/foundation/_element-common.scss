@@ -13,6 +13,13 @@
 // samp {
 
 
+.Examples {
+	grid-template: repeat(6, 1fr) / repeat(19, 1fr);
+	grid-template:60px 150px 90px 120px  / repeat(12, 1fr);gap:.5em;
+	width: 100svh;
+	height: 100svh;
+}
+
 
 strong {
 	color: var(--red);
@@ -51,6 +58,9 @@ strong {
 	color: var(--red);
 }
 
+.green {
+	color: var(--green);
+}
 
 .dothr {
 	margin: 0;
