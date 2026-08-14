@@ -4,19 +4,13 @@ date: "2026-08-08 23:57:00"
 slug: 'column-2'
 type: "FlexboxとGridの違いをわかりやすく解説"
 ---
-<style>
-strong {
-	color: var(--green);
-	font-size: 1.2em;
-}
-</style>
 
 # FlexboxとCSS Grid Layoutの役割の違い
 
 名は体を表す、その名称と意味を考えるとわかりやすいのだが。
 
 
-Flexboxは**BOX**、CSS Grid Layoutは**Layout**、この違いは市販の家具と、居室に造り付けの棚ほどの違いがある。
+Flexboxは**<span class="green">BOX</span>**、CSS Grid Layoutは**<span class="green">Layout</span>**、この違いは市販の家具と、居室に造り付けの棚ほどの違いがある。
 
 
 そういう身近な例、もっとも「卑近な例」で説明するつもりだったが、同じことを
@@ -28,9 +22,322 @@ vs
 
 たまたまかも知れないが、書籍と雑誌系Webサイトの2箇所だ。
 
+<div style="margin-top: 3em;"></div>
+
+ここから、何が淘汰されていくかとGrid Layoutの学習コストはペイされるか、まで通して説明したくなっている。
+
+<div style="margin-top: 3em;"></div>
+
+***
+
+が、まずは通り過ぎた間違えた道へ戻ろう。
+
+
+1次元だ2次元だという文言に惑わされ、FlexboxもCSS Gridも生でマル飲み込みしたら、消化しきれずいつまでも差異が分からないため、用途の違いも分別できないはずだ。
+
+## Flexboxとは
+
+まずはカラーリングや図解の巧い解説を鵜呑みにせず、自分でやってみるところから。
+
+```CSS
+.container-F {
+	display: flex;
+}
+```
+
+```CSS
+.container-G {
+	display: grid;
+}
+```
+HTMLにクラス：container-Fやcontainer-Gを書いても何も起こらない。<br>
+だからチュートリアルはそこを省くけども、-Fと-Gでは著しく違う。
+
+
+**display: flex;**
+はスタート地点ゼロで、横：X軸に進む準備をしている。<br>
+走者　→→→→→→→
+こいつは放っておけばどこまでも東へ向かって進む。
+
+<div style="margin-top: 3em;"></div>
+
+もうわかると思うが、
+
+**display: grid;**
+はスタート地点ゼロで、横：X軸に進む準備をしている走者と<br>
+縦：Y軸に進む準備をしている走者、2人いる。
+
+走者X　→→→→→→→<br>
+走者Y<br>
+　↓<br>
+　↓<br>
+　↓<br>
+
+走者Xも走者Yも進みきった先で〔杭〕を立てる。
+
+走者X　→→→→→→→　●<br>
+走者Y<br>
+　↓<br>
+　↓<br>
+　↓<br>
+　●　　　　　　　　　　△
+
+東と南へ進んだ走者は、大きな四角い旗を広げる仕事があって、杭を軸に今度は各自が〔交点△〕へ向かって布を広げながら瞬時に進む、みたいなイメージですかね。
+
+<div style="margin-top: 2em;"></div>
+
+走者が進む距離、彼が残す足跡（そくせき）がトラック&lt;length&gt;長さ、<br>
+交点△で大きな旗がパーンと広がった占有面積が、&lt;Cell&gt;セル
+
+広がった旗布の中にポンと置くのが
+item：もの（項目・品目・品物）
+
 <div style="margin-top: 4em;"></div>
 
-ここから、何が淘汰されていくかとGrid Layoutの学習コストはペイされるか、まで通して説明したくなっている。<br>
+まるで小学生に教えるような説を書いてやがる、だけども。
+
+
+**flex**
+も
+**grid**
+も
+同じことが出来ると思っている時点で頭をリセットして謙虚に戻った方がいいのが、大人の現実。
+
+
+オセロゲームで角を1つをとる手を考えているときに、相手は角を一挙に2つとる手を進めていたら？<br>
+必ず負ける、勝ちようがない。それがflexboxとGrid Layoutの現実。
+
+<div style="margin-top: 2em;"></div>
+
+**<span style="color:var(--green);font-weight:bold;">だって、そういう仕様として造られているから。</span>**
+
+## Flexboxの本質
+
+走者　→→→→→→→ こいつは放っておけばどこまでも東へ向かって進む。
+
+と書いた説明をソースに起こすと下記図になる。
+
+***
+
+<div style="display:flex;">
+<h3>H3-Title</h3><p>paragraph-Text</p>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--green);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--blue);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);padding:1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--aka);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+  <div style="border: 1px solid var(--vp-c-neutral);background: var(--vp-c-green-2);padding: 1em;"></div>
+</div>
+
+***
+
+きれいにレイアウトされたFlexboxばかり見ていて忘れているが、基本は&lt;h3&gt;も&lt;p&gt;も&lt;div&gt;もとにかく横並びに「部屋のスペース」がある限り流し込んでいき、「部屋の角」がきたら、段を変えて積んでいく。
+
+そういうと引越しのダンボール箱・搬入作業みたいだが、技術や仕様は通り過ぎてみるとわかる、これはfloatの進化系だ。我々は各自サイズを有するBOXを効率よく美しく並べたかった。
+
+<div style="margin-top: 4em;"></div>
+
+
+まぁ「部屋の角がきたら、段を変え」ですら
+<code>flex-wrap: nowrap</code>
+の初期値を
+<code>wrap</code>
+に書き換えてのことで、本来はただひたすら東行き。
+
+
+<div style="margin-top: 2em;"></div>
+
+では、**Grid Layout**
+が巷に浸透しきったら、
+**Flexbox**
+の出番はもうないのか。
+
+<div style="margin-top: 2em;"></div>
+
+「そんなこともない」が、その具体例をあまり見ないから、いつまでも（どっち？どっち？どっちがいいの？）と無駄な思考や議論を交わすことになる。
+
+<div style="margin-top: 2em;"></div>
+
+無駄無駄無駄無駄ーッ
+
+## パン屑リスト
+
+これは、縦方向に進むタイプを見たことがない。<br>
+外観的にも「東へ一直線」
+
+
+MDNに「
+[パン屑ナビゲーション](https://developer.mozilla.org/ja/docs/Web/CSS/How_to/Layout_cookbook/Breadcrumb_navigation)
+」の例を借りてくる。
+
+```html
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Category</a></li>
+    <li><a href="#">Sub Category</a></li>
+    <li><a href="#">Type</a></li>
+    <li><span aria-current="page">Product</span></li>
+  </ol>
+</nav>
+```
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Category</a></li>
+    <li><a href="#">Sub Category</a></li>
+    <li><a href="#">Type</a></li>
+    <li><span aria-current="page">Product</span></li>
+  </ol>
+</nav>
+
+↑　1〜5を単一行で東へ進むだけの外観にする、この最適解は**Flexbox**だ。<br>
+
+理由を「その方が簡単だから」と思わないで欲しい。
+
+<div style="margin-top: 2em;"></div>
+
+なぜか本邦では「ホームページ」という呼称で流通してしまったWebサイトは、Homeという門扉ページからはじまってグローバルナビゲーションを通して縦横無尽にあちこちへ歩きだせる敷地（Site）なので、ユーザーはしばしば（現在地はいったいどこだ？）と迷いやすい。
+
+
+それをあなたは今HomeからCategory（A）へ進みサブカテゴリ（C）への別れ道をさらに進み、Type別選択を経て「Product」ページにいるんですよ！
+
+とヘンゼルとグレーテルが残したパン屑になぞらえて、いざというときは（元来た道を戻れるように）ナビゲーションを書く。
+
+<div style="margin-top: 2em;"></div>
+
+ところで、ここに嘘が生じる。
+
+
+私は2.Categoryも通らなかったし、4.Typeで選択した覚えもない。だいたい通った道筋ならブラウザの〔前へ戻る〕ほど確実なものはなかろうが。<br>
+トップページからいきなり目立つバナーを踏んできたんだって！
+
+**パン屑リストが示すものは、本来のフロー（flow）流れ。**
+
+<div style="margin-top: 2em;"></div>
+
+人によってはディレクトリ構造と呼ぶかもしれないし、設計本来のフレームワークと呼ぶか、サイトマップ中の1つの軸と呼ぶか。
+
+<div style="margin-top: 2em;"></div>
+
+ともかくも決まったFlowの中で現在地を示す「パン屑リスト」がFlexboxと相性抜群なのは、なかなか理にかなっている。<br>
+と冒頭で触れた<span class="green">「フローレイアウト」</span>に通じている人は思ってくれるはずだ。
+
+<div style="margin-top: 4em;"></div>
+
+## Flexbox もう1つの使いどころ
+
+```CSS
+.container-F {
+	display: flex;
+}
+```
+
+```CSS
+.container-G {
+	display: grid;
+}
+```
+HTMLにクラス：container-Fやcontainer-Gを書いても何も起こらない。<br>
+と上に書いたが、この2つは既に大仕事を終えている。
+
+```CSS
+.container {
+	display: block;
+}
+```
+を否定して、打ち消している。
+
+<div style="margin-top: 3em;"></div>
+
+CSSが装飾する対象elementは、ブラウザごとに微妙に差のあるユーザーエージェントスタイル（user agent stylesheet）を充てられている。
+
+この（ua.css）各位をすべて見比べて上書きしたり、否定したり、書き足したりが面倒で不毛なケースも多々ある。
+
+たとえば、
+
+HTML <code>figure</code> キャプションが付けられる図要素をスライダーの中で使っていて、imgタグとの間に妙な余白が生じた。
+
+ChromeブラウザのUAスタイルはGithubでも見られる。
+
+[chromium](https://github.com/chromium/chromium/blob/main/third_party/blink/renderer/core/html/resources/html.css)
+
+```css
+figcaption {
+    display: block
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+```
+
+余白の解消策として、スライダーWrappr
+
+
+
+
+
+
+
+<img src="assets/4line.png" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTMLのベーシックなCSS、文書構造のフローレイアウトのために用意されているブラウザ個別の
+ユーザーエージェントスタイル（user agent stylesheet）
+
+
+
+
+
+だからチュートリアルはそこを省くけども、-Fと-Gでは著しく違う。
+
+
+
+
+
+
+
+
+：文章構造のためのHTMLの根幹、に唐突に「横向きのカラーボックス置きま〜す」という所作なので、理屈にとてもかなっている。
+
+
+
+
+<div style="margin-top: 12em;"></div>
+
+現在地までの本来の道のりを
+宿命というか理にかなっているというか、
+
+
+
+
+
+
+
+<div style="margin-top: 4em;"></div>
+
 
 
 ## フローレイアウトとグラフィックデザインの違い
